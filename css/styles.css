@@ -15,45 +15,18 @@ body{ /*aplica a todo el body*/
 width: 100%;
 max-width: 1300px;
 margin: 1px auto;
-display: grid; 
 }
-/* inicio encabezado! imagen + menu*/
+
+/* inicio CABECERA! imagen + menu*/
 .cabecera-contenedora { 
 background-image: url(../img/carple-tres-imagenes.png);
 background-position: center;
 background-size: cover;
-width: 100%;
-height: 12.5rem;
+width: 1300px;
+max-width: 100%;
+height: 15rem;
 }
 
-.cabecera-menu-navegacion { /*Menú navegacion*/
-list-style-type: none; 
-display: flex;
-justify-content: flex-start;
-margin:0 auto;
-}
-.list a {/*Menú navegacion "botones" */
-text-decoration: none;
-background-color: #eeedde;
-color: #203239;
-font-size: 1em;
-border: 1px solid #203239;
-border-radius: 0.31em;
-box-sizing: border-box;
-height: 1.25em;
-padding: 0.9em;
-width: 7.2em;
-margin-right: 0px;
-margin-top: 200px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}  
-.list a:hover {
-background-color: #ddd;
-width: 200px;
-}        
-/*fin del encabezado*/
 
 h1 { /* titulo carple aberturas*/
 background-color: #eeedde;
@@ -293,16 +266,13 @@ display: flex;
 align-items: flex-end;
 padding-bottom: 1.3em;
 } 
-.cabecera-menu-navegacion-f { /*Menú navegacion*/
-list-style-type: none; 
-display: flex;
-justify-content: flex-start;
-margin:0 auto;
-}
 /*fin de footer*/   
 
 /*RESPONSIVE TABLET*/
 @media screen and (max-width: 768px) and (min-width: 375px) {
+.bg-light{
+width: 8rem;
+}
 .imagen-descripcion { /*imagen + descripcion, flex column para que quede debajo*/
 flex-direction: column; 
 margin: 0;
@@ -400,16 +370,6 @@ gap: 1px;
 background-image: url(../img/carple-tres-imagenes.png);
 height: 5rem;
 }
-.cabecera-menu-navegacion { /*Menú navegacion*/
-display: block;
-}
-.list a {/*Menú navegacion "botones" */
-font-size: 1rem;
-margin-top: 0px;
-display: block;
-height: 2em;
-padding: 1px;
-}  
 .imagen-descripcion {
 flex-direction: column; /*paso a column para responsive*/
 margin: 0;
@@ -497,12 +457,7 @@ text-align: center;
 height: 1rem;
 padding-top: 1em;
 }
-.menu-footer {
-height: 1em;
-display: flex;
-align-items: flex-end;
-padding-bottom: 1.3em;
-} /*fin de footer*/   
+/*fin de footer*/   
 .cabecera-menu-navegacion-f { /*Menú navegacion*/
 list-style-type: none; 
 display: flex;
