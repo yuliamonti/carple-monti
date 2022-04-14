@@ -25,6 +25,23 @@ background-size: cover;
 width: 1300px;
 max-width: 100%;
 height: 15rem;
+display: flex;
+align-items: flex-end;
+}
+.navbar{
+width: 485px;
+height: 45px;
+}
+.navbar-nav {
+height: 40px;
+box-sizing: border-box;
+}
+.nav-item {
+width: 115px;
+background-color: #eeedde;
+}
+.container-fluid {
+background-color: #eeedde;
 }
 
 h1 { /* titulo carple aberturas*/
@@ -271,6 +288,13 @@ padding-bottom: 1.3em;
 @media screen and (max-width: 768px) and (min-width: 375px) {
 .bg-light{
 width: 8rem;
+}
+.nav .navbar .navbar-expand {
+width: 93px;
+height: 60px;
+}
+.nav-link {
+    height: 3em;
 }
 .imagen-descripcion { /*imagen + descripcion, flex column para que quede debajo*/
 flex-direction: column; 
