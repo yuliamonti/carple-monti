@@ -1,1 +1,163 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+/*INICIO CABECERA -Imagen + menú de navegacion */
+.cabecera-contenedora {
+  width: 100%;
+  background-image: url(../img/carple-tres-imagenes.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  max-width: 1300%;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cabecera-contenedora .navbar {
+  /*menú de navegacion BOOTSTRAP*/
+  width: 485px;
+  height: 45px;
+}
+
+.cabecera-contenedora .navbar .container-fluid {
+  background-color: #eeedde;
+}
+
+.cabecera-contenedora .navbar .container-fluid ul {
+  /*class navbar nav*/
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cabecera-contenedora .navbar .container-fluid ul li {
+  /*class nav item*/
+  width: 115px;
+  background-color: #eeedde;
+}
+
+.cabecera-contenedora .navbar .container-fluid ul li a {
+  /*class nav link*/
+  height: 40px;
+  width: 115px;
+  color: #203239;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  text-decoration: none;
+  background-color: #eeedde;
+}
+
+h1 {
+  /*TITLE carple aberturas*/
+  background-color: #eeedde;
+  font-weight: 150;
+  font-size: 200%;
+  color: #203239;
+  padding: 0.19em;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+section {
+  /*imagen + texto*/
+}
+
+section div {
+  background-color: #eeedde;
+  height: 35vh;
+  width: auto;
+  padding: 0.3em;
+  border: 0;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section div img {
+  /*imagen*/
+  height: 30vh;
+  width: 40vw;
+  max-width: 250px;
+  margin-right: 0.6em;
+}
+
+section div img p {
+  /*texto*/
+  font-size: 100%;
+  color: #203239;
+  line-height: 1;
+  letter-spacing: 0.11em;
+  height: 35vh;
+  min-height: 40vh;
+  margin-left: 0.5em;
+  padding: 0.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section h2 {
+  /*Algunos de nuestros trabajos - subtitulo*/
+  background-color: #eeedde;
+  font-weight: 100;
+  font-size: 150%;
+  color: #203239;
+  padding: 0.19em;
+}
+
+/*comienza el pie de pagina - FOOTER*/
+footer {
+  background-color: #203239;
+  height: 3rem;
+}
+
+footer p {
+  /*parrafo copyright*/
+  font-size: 70%;
+  letter-spacing: 0;
+  color: #eeedde;
+  margin-top: 0.06em;
+  text-align: center;
+  height: 5rem;
+  padding-top: 2em;
+}
+
+section {
+  /*imagenes + descripcion de los servicios*/
+}
+
+section span {
+  /*contiene imagenes + titulo + descripcion*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.3em;
+  padding: 0.3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-color: #eeedde;
+  font-size: 110%;
+  letter-spacing: 0.1rem;
+  color: #203239;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: justify;
+  margin-top: 0.06em;
+  text-align: center;
+  height: 100vh;
+  padding-top: 2em;
+  padding-bottom: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

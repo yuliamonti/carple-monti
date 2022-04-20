@@ -17,7 +17,7 @@ max-width: 1300px;
 margin: 1px auto;
 }
 
-/* inicio CABECERA! imagen + menu*/
+/* inicio CABECERA! imagen + menu
 .cabecera-contenedora { 
 background-image: url(../img/carple-tres-imagenes.png);
 background-position: center;
@@ -42,9 +42,9 @@ background-color: #eeedde;
 }
 .container-fluid {
 background-color: #eeedde;
-}
+}*/
 
-h1 { /* titulo carple aberturas*/
+/* h1 { /* titulo carple aberturas
 background-color: #eeedde;
 font-weight: 150;
 font-size: 200%;
@@ -52,9 +52,9 @@ color: #203239;
 padding: 0.19em;
 grid-column-start: 1;
 grid-column-end: -1;
-}
+} */
 
-/* inicio- contenedor parrafo + foto*/
+/* inicio- contenedor parrafo + foto
 .imagen-descripcion {
 background-color: #eeedde;
 height: 9.4em;
@@ -77,15 +77,15 @@ margin-bottom: 0;
 display: flex;
 grid-column-start: 1;
 grid-column-end: -1;
-}
-
-a {/*foto*/
+}*/
+/*
+a {/*foto
 height: 9.4em;
 width: 12.5em;
 margin-right: 0.6em;
 }
 
-p {/* parrafo */
+p {/* parrafo 
 font-size: 100%;
 color: #203239;
 line-height: 1;
@@ -95,17 +95,17 @@ min-height: 3.25em;
 margin-left: 0.5em;
 padding: 0.3rem;
 box-sizing: border-box;
-}
+}*/
 
-.subtitulo { /*Algunos de nuestros trabajos*/
+/* .subtitulo { /*Algunos de nuestros trabajos
 background-color: #eeedde;
 font-weight: 100;
 font-size: 100%;
 color: #203239;
 padding: 0.19em;
-}
+}*/
 
-.galeria { /* galeria de fotos de trabajos realizados*/
+/* .galeria { /* galeria de fotos de trabajos realizados
 background-color: #eeedde;
 width: 100vw; 
 max-width: 1300px;
@@ -115,21 +115,21 @@ grid-template-columns: auto auto auto auto auto;
 gap: 1px;
 grid-column-start: 1;
 grid-column-end: -1;
-} /* fin descripcion*/
+}  fin descripcion*/ 
 
-.productos{ /*foto + titulo + descripcion*/
+/*.productos{ /*foto + titulo + descripcion
 display: flex;
 flex-direction: column;
 margin-left: 0.3em;
 padding: 0.3em;
 box-sizing: border-box;
-}
-.productos h3 { /*titulo de la descripcion*/
+}*/
+/*.productos h3 { /*titulo de la descripcion
 color: #203239;
 margin-left: 0.5em;    
 }
 
-.empresa { /*empresa descripcion historia */
+.empresa { /*empresa descripcion historia
 background-color: #eeedde;
 font-weight: 150;
 font-size: 1rem;
@@ -139,7 +139,7 @@ box-sizing: border-box;
 overflow: visible;
 text-align: justify;
 letter-spacing: 0.1rem;
-}
+}*/
 
 main h3{ /*contacto titulo*/
 font-size: 1rem;
@@ -191,7 +191,7 @@ margin-top: 0.3em;
 margin-left: 1.2em;
 }
 /*contenedor de formulario*/
-form { /*Formulario flexbox para ordenar*/
+form { 
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -260,8 +260,8 @@ margin:auto;
 align-items: center;
 }/*Fin formulario*/
 
-/*comienza el pie de pagina*/
-footer p{ /*parrafo copyright*/
+/*comienza el pie de pagina
+footer p{ /*parrafo copyright
 font-size:70%;
 letter-spacing: 0;
 color: #eeedde;
@@ -282,7 +282,7 @@ display: flex;
 align-items: flex-end;
 padding-bottom: 1.3em;
 } 
-/*fin de footer*/   
+fin de footer*/   
 
 /*RESPONSIVE TABLET*/
 @media screen and (max-width: 768px) and (min-width: 375px) {
