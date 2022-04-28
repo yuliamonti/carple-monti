@@ -1,0 +1,9 @@
+$colores:(
+    font: #203239,
+    bg: #eeedde,
+    );
+@each $name, $value in colores {
+    .font-#{$name} {
+        color: $value;
+      }
+    }
