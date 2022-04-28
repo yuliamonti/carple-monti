@@ -5,7 +5,7 @@
   background-image: url(../img/carple-tres-imagenes.png);
   background-position: center;
   background-size: cover;
-  width: 100vw;
+  width: 120vw;
   max-width: 1300%;
   height: 15rem;
   display: -webkit-box;
@@ -54,23 +54,17 @@
 h1 {
   /*TITLE carple aberturas*/
   background-color: #eeedde;
+  width: 120vw;
   font-weight: 150;
   font-size: 200%;
   color: #203239;
   padding: 0.19em;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: -1;
-}
-
-section {
-  /*imagen + texto*/
-}
+  }
 
 section div {
   background-color: #eeedde;
   height: 35vh;
-  width: auto;
+  width: 120vw;
   padding: 0.3em;
   border: 0;
   margin-bottom: 0;
@@ -104,6 +98,7 @@ section div img p {
 section h2 {
   /*Algunos de nuestros trabajos - subtitulo*/
   background-color: #eeedde;
+  width: 120vw;
   font-weight: 100;
   font-size: 150%;
   color: #203239;
@@ -114,6 +109,7 @@ section h2 {
 footer {
   background-color: #203239;
   height: 3rem;
+  width: 120vw;
 }
 
 footer p {
@@ -125,10 +121,6 @@ footer p {
   text-align: center;
   height: 5rem;
   padding-top: 2em;
-}
-
-section {
-  /*imagenes + descripcion de los servicios*/
 }
 
 section span {
@@ -158,12 +150,9 @@ main {
   margin-top: 0.06em;
   text-align: center;
   height: 125vh;
+  width: 120vw;
   padding-top: 2em;
   padding-bottom: 1rem;
-}
-
-main {
-  /*pagina contacto*/
 }
 
 main h3 {
