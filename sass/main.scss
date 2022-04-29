@@ -1,14 +1,17 @@
+@import "mixin"; //mixin para display flex - column
+@import "colores"; //mapa e iteraccion colores
+@import "grayscale"; //map-get escala de grises
 * {
 	margin: 0px;
 	padding: 0px;
 }
-&:root {
+:root {
 	font-size: 1.2rem;
 	font-family: 'Fredoka', sans-serif;
 	--color-oscuro-uno: #141E27 --color-oscuro-dos: #203239 --color-claro-uno: #E0DDAA --color-claro-dos: #EEEDDE;
 }
 body {
-    width: 100vw;
+    width: 1200vw;
     max-width: 1300px;
     margin: 1px auto;   
 }
@@ -18,7 +21,7 @@ body {
 	background-image: url(../img/carple-tres-imagenes.png);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 120vw;
     max-width: 1300%;
     height: 15rem;
     display: flex;
@@ -51,18 +54,17 @@ body {
 }
 h1{ /*TITLE carple aberturas*/
     background-color: #eeedde;
+    width: 120vw;
     font-weight: 150;
     font-size: 200%;
     color: #203239;
     padding: 0.19em;
-    grid-column-start: 1;
-    grid-column-end: -1;
 }
 section { /*imagen + texto*/
         div {
             background-color: #eeedde;
             height: 35vh;
-            width: auto;
+            width: 120vw;
             padding: 0.3em;
             border: 0;
             margin-bottom: 0;
@@ -74,7 +76,7 @@ section { /*imagen + texto*/
                margin-right: 0.6em;
                p{ /*texto*/
                   font-size: 100%;
-                  color: #203239;
+                  color: map-get($grayscale, 900);
                   line-height: 1;
                   letter-spacing: 0.11em;
                   height: 35vh;
@@ -89,6 +91,7 @@ section { /*imagen + texto*/
 section {
     h2 { /*Algunos de nuestros trabajos - subtitulo*/
         background-color: #eeedde;
+        width: 120vw;
         font-weight: 100;
         font-size: 150%;
         color: #203239;
@@ -99,6 +102,7 @@ section {
     footer {
         background-color: #203239;
         height: 3rem;
+        width: 120vw;
         p{/*parrafo copyright*/
             font-size:70%;
             letter-spacing: 0;
@@ -111,8 +115,7 @@ section {
     }
 section{ /*imagenes + descripcion de los servicios*/
       span { /*contiene imagenes + titulo + descripcion*/
-        display: flex;
-        flex-direction: column;
+        @include flexCol;
         margin-left: 0.3em;
         padding: 0.3em;
         box-sizing: border-box;
@@ -128,6 +131,7 @@ main { /*Empresa*/
        margin-top:0.06em;
        text-align: center;
        height: 125vh;
+       width: 120vw;
        padding-top: 2em;
        padding-bottom: 1rem;
     }
@@ -145,7 +149,7 @@ main { /*Empresa*/
         background-color: #eeedde;
         color: #203239;
         width: 100vw;
-        height: 130vh;
+        height: 140vh;
         display: grid;
         grid-template-columns: 40% 60%;
         font-size: 1.2rem;
@@ -237,6 +241,7 @@ form { /*comunicate con nosotros FORMULARIO*/
         margin-bottom: 0.3em;
         margin-right: auto;
         margin-left: auto;
+        height: 14vh;
         button {
             color: #203239;
             border: 1px solid #203239;
@@ -326,7 +331,7 @@ form { /*comunicate con nosotros FORMULARIO*/
         }
         .container-datos {
             display: block;
-            height: 900px;
+            height: 1200px;
             width: 100%;
             font-size: 0.8rem;
         }
@@ -421,7 +426,7 @@ form { /*comunicate con nosotros FORMULARIO*/
 	.container-datos {
 		display: block;
 		width: 100%;
-		height: 800px;
+		height: 1000px;
 	}
 	main {
 		h3 {
@@ -450,14 +455,9 @@ form { /*comunicate con nosotros FORMULARIO*/
 			padding-top: 1em;
 		}
 	}
-	.cabecera-menu-navegacion-f {
-		list-style-type: none;
-		display: flex;
-		justify-content: flex-start;
-		margin: 0 auto;
-	}
 	.texto-cuadro {
-		width: 15em;
+		width: 20em;
+        height: 5em;
 		label {
 			font-size: 1rem;
 		}
@@ -471,15 +471,18 @@ form { /*comunicate con nosotros FORMULARIO*/
 		}
 		font-size: 1rem;
 		margin: 0.5rem 0;
+        height: 6.25em;
+        width: 16rem;
 		textarea {
-			max-width: 55%;
-			height: 4em;
+			width: 20em;
+            height: 4em;
 		}
 	}
 	.enviar {
 		button {
 			height: 2em;
 			font-size: 1rem;
+            width: 4em;
 		}
 	}
 }
