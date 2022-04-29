@@ -1,6 +1,6 @@
 @import "mixin"; //mixin para display flex - column
 @import "colores"; //mapa e iteraccion colores
-
+@import "grayscale"; //map-get escala de grises
 * {
 	margin: 0px;
 	padding: 0px;
@@ -76,7 +76,7 @@ section { /*imagen + texto*/
                margin-right: 0.6em;
                p{ /*texto*/
                   font-size: 100%;
-                  color: #203239;
+                  color: map-get($grayscale, 900);
                   line-height: 1;
                   letter-spacing: 0.11em;
                   height: 35vh;
