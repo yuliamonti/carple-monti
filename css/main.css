@@ -1,12 +1,11 @@
 @charset "UTF-8";
 /*INICIO CABECERA -Imagen + menú de navegacion */
 .cabecera-contenedora {
-  width: 100%;
   background-image: url(../img/carple-tres-imagenes.png);
   background-position: center;
   background-size: cover;
-  width: 120vw;
-  max-width: 1300%;
+  width: 100vw;
+  max-width: 100%;
   height: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +17,7 @@
 
 .cabecera-contenedora .navbar {
   /*menú de navegacion BOOTSTRAP*/
-  width: 485px;
+  width: 30rem;
   height: 45px;
 }
 
@@ -35,14 +34,14 @@
 
 .cabecera-contenedora .navbar .container-fluid ul li {
   /*class nav item*/
-  width: 115px;
+  width: 6rem;
   background-color: #eeedde;
 }
 
 .cabecera-contenedora .navbar .container-fluid ul li a {
   /*class nav link*/
   height: 40px;
-  width: 115px;
+  width: 6rem;
   color: #203239;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -54,7 +53,8 @@
 h1 {
   /*TITLE carple aberturas*/
   background-color: #eeedde;
-  width: 120vw;
+  width: 100vw;
+  max-width: 100%;
   font-weight: 150;
   font-size: 200%;
   color: #203239;
@@ -64,19 +64,22 @@ h1 {
 section div {
   background-color: #eeedde;
   height: 35vh;
-  width: 120vw;
+  width: 100vw;
+  max-width: 100%;
   padding: 0.3em;
+  padding-right: 5rem;
   border: 0;
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 section div img {
   /*imagen*/
   height: 25vh;
-  width: 40vw;
+  width: 38vw;
   max-width: 250px;
   margin-right: 0.6em;
 }
@@ -93,12 +96,13 @@ section div img p {
   padding: 0.3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
+  }
 
-section h2 {
+section h2 { 
   /*Algunos de nuestros trabajos - subtitulo*/
   background-color: #eeedde;
-  width: 120vw;
+  width: 100vw;
+  max-width: 100%;
   font-weight: 100;
   font-size: 150%;
   color: #203239;
@@ -109,7 +113,8 @@ section h2 {
 footer {
   background-color: #203239;
   height: 3rem;
-  width: 120vw;
+  width: 100vw;
+  max-width: 100%;
 }
 
 footer p {
@@ -150,7 +155,8 @@ main {
   margin-top: 0.06em;
   text-align: center;
   height: 125vh;
-  width: 120vw;
+  width: 100vw;
+  max-width: 100%;
   padding-top: 2em;
   padding-bottom: 1rem;
 }
@@ -170,6 +176,7 @@ main h3 {
   background-color: #eeedde;
   color: #203239;
   width: 100vw;
+  max-width: 100%;
   height: 140vh;
   display: -ms-grid;
   display: grid;
