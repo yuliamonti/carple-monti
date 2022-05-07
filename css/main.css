@@ -342,7 +342,19 @@ form {
       -ms-flex-align: center;
           align-items: center;
 }
-
+.bgc{
+background-color: #eeedde;
+}
+#p-bienvenidos {
+  height: 40vh;
+  width: 100vw;
+  font-weight: 500;
+  font-size: 150%;
+  color: #203239;
+  text-transform: uppercase;
+  padding: 2rem;
+  text-align: center;
+}
 /*tablet*/
 @media screen and (max-width: 768px) and (min-width: 375px) {
   .bg-light {
