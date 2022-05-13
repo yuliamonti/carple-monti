@@ -17,7 +17,7 @@
 
 .cabecera-contenedora .navbar {
   /*menú de navegacion BOOTSTRAP*/
-  width: 32rem;
+  width: 30rem;
   height: 45px;
 }
 
@@ -58,16 +58,16 @@ h1 {
   font-weight: 150;
   font-size: 200%;
   color: #203239;
-  padding: 1rem 1rem 1rem 2rem;
-
+  padding: 0.19em;
   }
 
-section div {/*Descripcion de servicios, imagen+texto*/
+section div {
   background-color: #eeedde;
   height: 35vh;
   width: 100vw;
   max-width: 100%;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 0.3em;
+  padding-right: 5rem;
   border: 0;
   margin-bottom: 0;
   display: -webkit-box;
@@ -106,7 +106,7 @@ section h2 {
   font-weight: 100;
   font-size: 150%;
   color: #203239;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 0.19em;
 }
 
 /*comienza el pie de pagina - FOOTER*/
@@ -154,14 +154,15 @@ main {
   text-align: justify;
   margin-top: 0.06em;
   text-align: center;
-  height: 90vh;
+  height: 125vh;
   width: 100vw;
   max-width: 100%;
-  padding: 1rem 6rem 1rem 6rem;
+  padding-top: 2em;
+  padding-bottom: 1rem;
 }
 
 main h3 {
-  /*titulos contactanos y comunicate con nosotros*/
+  /*titulos contactanos y comunicate on nosotros*/
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
@@ -239,8 +240,8 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50vw;
-  max-width: 50vw;
+  width: 90%;
+  max-width: 1000px;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -255,8 +256,8 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50vw;
-  height: 15vh;
+  width: 40vw;
+  height: 20vh;
   margin: 0,5 rem 0;
 }
 
@@ -268,7 +269,7 @@ form {
 
 .texto-cuadro input {
   /*texto indicativo*/
-  height: 8vh;
+  height: 10vh;
   padding-left: 0.5em;
   border: 1px solid #203239;
   border-radius: 0.3em;
@@ -283,7 +284,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 100%;
-  width: 50vw;
+  width: 30vw;
   margin: 0.75rem 0;
 }
 
@@ -295,10 +296,10 @@ form {
 
 .texto-comentario textarea {
   font-size: 100%;
-  width: 40vw;
+  width: 30vw;
   max-width: 100%;
-  height: 22vh;
-  max-height: 22vh;
+  height: 20vh;
+  max-height: 15em;
   padding-top: 0.5em;
   padding-left: 0.5em;
   border: 1px solid #203239;
@@ -316,14 +317,14 @@ form {
   margin-bottom: 0.3em;
   margin-right: auto;
   margin-left: auto;
-  height: 12vh;
+  height: 14vh;
 }
 
 .enviar button {
   color: #203239;
   border: 1px solid #203239;
   border-radius: 0.3em;
-  height: 7vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,10 +345,9 @@ form {
 .bgc{
 background-color: #eeedde;
 }
-#p-bienvenidos { /* pagina bienvenidos*/
+#p-bienvenidos {
   height: 40vh;
   width: 100vw;
-  max-width: 98vw;
   font-weight: 500;
   font-size: 150%;
   color: #203239;
@@ -357,31 +357,17 @@ background-color: #eeedde;
 }
 /*tablet*/
 @media screen and (max-width: 768px) and (min-width: 375px) {
-  /*cabecera contenedora - menu de navegacion*/
-  .cabecera-contenedora .navbar .container-fluid ul li a {
-    height: 70px;
-    width: 10rem;
-    background-color: #eeedde;
-    color: #203239;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    text-decoration: none;
-        }
-  .bg-light { /*menu de navegacion*/
+  .bg-light {
     width: 8rem;
   }
-  .nav .navbar .navbar-expand { /*menu de navegacion*/
+  .nav .navbar .navbar-expand {
     width: 93px;
     height: 60px;
   }
-  .nav-link {/*menu de navegacion*/
+  .nav-link {
     height: 3em;
   }
-  h1 {
-    background-color: transparent;
-  }
-  .imagen-descripcion { /*descripcion de los servicios e imagenes*/
+  .imagen-descripcion {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -390,24 +376,42 @@ background-color: #eeedde;
     height: 35vw;
     width: 100%;
   }
-  
-  .imagen-descripcion img {/*descripcion de los servicios - IMAGEN*/
+  .imagen-descripcion p {
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 130px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagen-descripcion img {
     display: block;
     margin: 0px auto;
     width: 30vw;
     height: 20vw;
   }
-  .imagen-descripcion-b {/*descripcion de los servicios - index*/
+  .imagen-descripcion-b {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    height: 40vw;
+    height: 35vw;
     width: 100%;
   }
-  
-  .imagen-descripcion-b img {/*IMAGEN descripcion de los servicios - index*/
+  .imagen-descripcion-b p {
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 130px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagen-descripcion-b img {
     display: block;
     margin: 0px auto;
     width: 30vw;
@@ -419,12 +423,11 @@ background-color: #eeedde;
     max-width: 1000px;
     margin: 0px;
     display: block;
-    background-color: #eeedde;
   }
-  .subtitulo { /*Algunos de nuestros trabajos - subtitulo*/
+  .subtitulo {
     font-size: 200%;
   }
-  .galeria {/*Algunos de nuestros trabajos - GALERIA*/
+  .galeria {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,79 +438,56 @@ background-color: #eeedde;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .galeria img {/*Algunos de nuestros trabajos - GALERIA - IMAGENES*/
+  .galeria img {
     width: 25vw;
     height: 15vw;
     gap: 1px;
   }
-  /*formulario + contacto*/
-  .container-datos { /*contenedor de datos FORMULARIO Y MEDIOS DE CONTACTO*/
+  .container-datos {
     display: block;
-    width: 100vw;
-    height: 80rem;
-    padding: 1px;
+    height: 1200px;
+    width: 100%;
+    font-size: 0.8rem;
   }
-  .texto-cuadro {
-    width: 35rem;
-    max-width: 95vw;
-    height: 10vh;
+  .row label {
+    font-size: 0.9rem;
   }
-  .texto-cuadro label {
-    font-size: 1rem;
-  }
-  
-  .texto-comentario {
-    font-size: 1rem;
-    margin: 1rem 0;
-    height: 10rem;
-    width: 40rem;
-  }
-  .texto-comentario label {
-    font-size: 1rem;
-  }
-  .texto-comentario textarea {
-    width: 30rem;
-    max-width: 30rem;
-    height: 30rem;
-    max-height: 30rem;
-  }
-  .enviar button {
-    height: 4rem;
-    font-size: 1rem;
-    width: 7rem;
+  form {
+    display: block;
   }
   .empresa {
     font-size: 0.8rem;
     padding: 1em 2em;
-    height: 50vh;
   }
-  .imagen-descripcion-prod  {/*descripcion PAGINA PRODUCTOS*/
+  .productos p {
+    display: block;
+    height: 6.25rem;
+  }
+  .productos h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+    min-height: 12vh;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 375px) {
+  .cabecera-contenedora {
+    background-image: url(../img/carple-tres-imagenes.png);
+    height: 10rem;
+  }
+  .imagen-descripcion {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    height: 37vh;
-    width: 100%;
-    align-items: center;
-  }
-
-/*mobile*/
-@media screen and (max-width: 375px) {
-  .cabecera-contenedora {/*cabecera contenedora imagen + menu*/
-    background-image: url(../img/carple-tres-imagenes.png);
-    height: 10rem;
-  }
-  .imagen-descripcion {/*imagen + descripcion*/
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 5px;
-    height: 58vh;
+    height: 1200vw;
     width: 100%;
   }
-  .imagen-descripcion p { /*imagen + descripcion PARRAFO*/
+  .imagen-descripcion p {
     font-size: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,12 +500,12 @@ background-color: #eeedde;
             justify-content: center;
   }
   .imagen-descripcion img {
-    width: 30vw;/*imagen + descripcion IMAGEN*/
+    width: 30vw;
     height: 25vw;
     display: block;
     margin: 20px auto;
   }
-  .imagen-descripcion-b { /*imagen + descripcion DE  PAG BIENVENIDOS*/
+  .imagen-descripcion-b {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -534,7 +514,7 @@ background-color: #eeedde;
     height: 100vw;
     width: 100%;
   }
-  .imagen-descripcion-b p {/*imagen + descripcion PAG BIENVENIDOS PARRAFO*/
+  .imagen-descripcion-b p {
     font-size: 1rem;
     height: 120vh;
     display: -webkit-box;
@@ -544,7 +524,7 @@ background-color: #eeedde;
         -ms-flex-align: center;
             align-items: center;
   }
-  .imagen-descripcion-b img {/*imagen + descripcion PAG BIENVENIDOS IMAGEN*/
+  .imagen-descripcion-b img {
     width: 30vw;
     height: 25vw;
     display: block;
@@ -557,7 +537,7 @@ background-color: #eeedde;
     margin: 0px;
     display: block;
   }
-  .subtitulo { /*SUBTITULO Alguno de nuestros trabajos*/
+  .subtitulo {
     font-size: 1rem;
   }
   .galeria {
@@ -571,19 +551,41 @@ background-color: #eeedde;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .galeria img { /* galeria de imagenes*/
+  .galeria img {
     max-width: 200px;
     gap: 1px;
   }
-  /*formulario + contacto*/
-  .container-datos { /*contenedor de datos FORMULARIO Y MEDIOS DE CONTACTO*/
+  .container-datos {
     display: block;
     width: 100%;
-    height: 1100px;
-    padding: 1px;
+    height: 1000px;
   }
+  main h3 {
+    text-align: start;
+  }
+  .row {
+    margin-left: 13px;
+  }
+  .productos {
+    display: block;
+  }
+  .productos h3 {
+    font-size: 1rem;
+    height: 85px;
+  }
+  p {
+    font-size: 1rem;
+    min-height: 3em;
+  }
+  footer p {
+    margin-top: 0.06em;
+    text-align: center;
+    height: 1rem;
+    padding-top: 1em;
+  }
+  
   .texto-cuadro {
-    width: 25rem;
+    width: 20em;
     height: 5em;
   }
   .texto-cuadro label {
@@ -602,43 +604,13 @@ background-color: #eeedde;
     font-size: 1rem;
   }
   .texto-comentario textarea {
-    width: 13rem;
-    max-width: 13rem;
+    width: 20em;
     height: 4em;
   }
   .enviar button {
     height: 2em;
     font-size: 1rem;
     width: 4em;
-  }
-  main h3 {
-    text-align: start;
-  }
-  .row {
-    margin-left: 13px;
-  }
-  .empresa {
-    font-size: 0.8rem;
-    padding: 1em 2em;
-    height: 100vh;
-  }
-  *
-  .imagen-descripcion-prod  {/*descripcion PAGINA PRODUCTOS*/
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0;
-    height: 65vh;
-    width: 100%;
-    align-items: center;
-  }
-  
-  footer p { /*pie de pagina*/
-    margin-top: 0.06em;
-    text-align: center;
-    height: 1rem;
-    padding-top: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
