@@ -134,15 +134,20 @@ letter-spacing: 1pt;
 padding: 5rem;
 text-align: justify;
 }
-.empresa-contenido span {
-font-weight: 700;
-font-size: 2rem;
+.empresa-contenido, p{
+letter-spacing: 2pt;
+line-height: 1.2;
 }
+
 @media (max-width: 600px) {
 .subtitulo, h2 {
 font-size: 2.5rem;
 margin-bottom: 1rem;
 margin-top: 2.5rem;
+}
+.empresa-contenido, p{
+letter-spacing: 1pt;
+line-height: 1;
 }
 }
 @media (max-width: 300px) {
@@ -156,17 +161,9 @@ line-height: 1;
 letter-spacing: 1pt;
 padding: 2.5rem;
 }
-.empresa-contenido span {
-font-weight: 600;
-font-size: 1.5rem;
-}
 @media (max-width:300px){
 #empresa {
 padding: 2rem;
-}
-.empresa-contenido span {
-font-size: 1.2rem;
-font-weight: 400;
 }
 .empresa-contenido, p {
 font-size: 1.2rem;
@@ -177,13 +174,12 @@ line-height: 1;
 #servicios{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-gap: 2rem;
+gap: 1rem;
 }
 .servicio, h3 {
 font-size: 2rem;
-color: #7c7d76;
-text-transform: uppercase;
-margin-bottom: 2rem;
+color: #00a4e6;
+margin-bottom: 1rem;
 }
 .servicio p {
 color: #7c7d76;
@@ -192,8 +188,9 @@ text-transform: none;
 letter-spacing: 1pt;
 }
 .servicio {
-margin: 3rem auto;
+margin: 2rem auto;
 padding: 2rem;
+text-align: center;
 }
 @media (max-width: 600px) {
 #servicios{
@@ -218,9 +215,6 @@ padding: 1rem;
 }
 }
 /*Galeria de imagenes*/
-#proyectos h3 {
-margin-left: 2rem;
-}
 #proyectos h4 {
 text-align: center;
 color: #00a4e6;
